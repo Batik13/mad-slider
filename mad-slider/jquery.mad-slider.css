@@ -1,0 +1,85 @@
+/* main */
+.mad-slider {
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+}
+.ms__container {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+.ms__line {
+  position: relative;
+  transition: all .5s;
+}
+.ms__line:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+.ms-slide {
+  float: left;
+  text-align: center;
+  overflow: hidden;  
+}
+
+/* nav */
+.ms-nav{
+  
+}
+.ms-nav__next{  
+  right: 0;
+}
+.ms-nav__prev{  
+  left: 0;
+}
+.ms-nav__btn{
+  position: absolute;
+  cursor: pointer;
+  background: #cccccc;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 6px;
+  top: 50%;
+  margin-top: -17.5px;
+  transition: all .3s;
+  opacity: 1;
+}
+.ms-nav__btn:hover{
+  transition: all .3s;
+  opacity: 0.7;
+}
+.ms-slide img{
+
+}
+
+/* min map */
+.ms__minmap{
+  position: absolute;
+  width: 100%;
+  bottom: -27px;
+}
+.ms_minmapcontainer{
+  text-align: center;
+}
+.ms_minmapitem{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #4b4b4b;
+  margin: 0 4px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.ms_minmapitem:hover,
+.ms_minmapitem_active{
+  transition: all .3s;
+  background: #4b4b4b;
+}
